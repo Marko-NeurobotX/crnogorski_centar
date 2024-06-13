@@ -23,7 +23,7 @@ class GalleryResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\FileUpload::make('attachment')->required(),
+                Forms\Components\FileUpload::make('attachment')->required()->multiple(),
             ]);
     }
 

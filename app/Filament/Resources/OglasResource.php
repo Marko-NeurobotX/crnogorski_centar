@@ -24,7 +24,6 @@ class OglasResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('title')->required(),
-                Forms\Components\RichEditor::make('content')->required()->columnSpanFull()  ,
                 Forms\Components\FileUpload::make('attachment')->required(),
             ]);
     }

@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('oglas', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->longText('content');
             $table->string('attachment');
             $table->timestamps();
         });
