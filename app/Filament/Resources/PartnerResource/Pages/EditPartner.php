@@ -8,6 +8,10 @@ use Filament\Resources\Pages\EditRecord;
 
 class EditPartner extends EditRecord
 {
+    protected function getRedirectUrl(): string
+    {
+       return $this->previousUrl ?? $this->getResource()::getUrl('index');
+    }
     protected static string $resource = PartnerResource::class;
 
     protected function getHeaderActions(): array

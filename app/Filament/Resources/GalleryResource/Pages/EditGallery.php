@@ -8,6 +8,10 @@ use Filament\Resources\Pages\EditRecord;
 
 class EditGallery extends EditRecord
 {
+    protected function getRedirectUrl(): string
+    {
+       return $this->previousUrl ?? $this->getResource()::getUrl('index');
+    }
     protected static string $resource = GalleryResource::class;
 
     protected function getHeaderActions(): array
