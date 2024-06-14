@@ -28,7 +28,6 @@ class PripremaResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('name')->required(),
-                Forms\Components\RichEditor::make('description')->required()->columnSpanFull()  ,
                 Forms\Components\FileUpload::make('attachment')->required(),
             ]);
     }
