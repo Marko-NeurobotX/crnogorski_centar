@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('pripremas', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('title');
             $table->longText('description');
             $table->string('attachment');
             $table->timestamps();
