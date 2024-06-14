@@ -19,6 +19,10 @@ class LicenceResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-document';
 
+    protected static ?string $modelLabel = 'Licenca';
+
+    protected static ?string $pluralModelLabel = 'Licence';
+
     public static function form(Form $form): Form
     {
         return $form

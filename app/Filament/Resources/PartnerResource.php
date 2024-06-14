@@ -19,6 +19,10 @@ class PartnerResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-face-smile';
 
+    protected static ?string $modelLabel = 'Partner';
+
+    protected static ?string $pluralModelLabel = 'Partneri';
+
     public static function form(Form $form): Form
     {
         return $form

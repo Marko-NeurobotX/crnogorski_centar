@@ -19,6 +19,11 @@ class CategoryResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-tag';
 
+    protected static ?string $modelLabel = 'Kategorija';
+
+    protected static ?string $pluralModelLabel = 'Kategorije';
+
+
     public static function form(Form $form): Form
     {
         return $form

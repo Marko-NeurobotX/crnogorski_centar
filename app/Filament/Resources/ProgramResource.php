@@ -19,6 +19,10 @@ class ProgramResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-academic-cap';
 
+    protected static ?string $modelLabel = 'Program';
+
+    protected static ?string $pluralModelLabel = 'Programi';
+
     public static function form(Form $form): Form
     {
         return $form

@@ -17,7 +17,11 @@ class PripremaResource extends Resource
 {
     protected static ?string $model = Priprema::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-ellipsis-horizontal';
+
+    protected static ?string $modelLabel = 'Program u pripremi';
+
+    protected static ?string $pluralModelLabel = 'Programi u pripremi';
 
     public static function form(Form $form): Form
     {

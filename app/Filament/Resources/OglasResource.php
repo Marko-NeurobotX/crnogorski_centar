@@ -19,6 +19,10 @@ class OglasResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    protected static ?string $modelLabel = 'Oglas';
+
+    protected static ?string $pluralModelLabel = 'Oglasi';
+
     public static function form(Form $form): Form
     {
         return $form

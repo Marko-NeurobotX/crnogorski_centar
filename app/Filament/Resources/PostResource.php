@@ -23,6 +23,10 @@ class PostResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-newspaper';
 
+    protected static ?string $modelLabel = 'Novost';
+
+    protected static ?string $pluralModelLabel = 'Novosti';
+
     public static function form(Form $form): Form
     {
         return $form
