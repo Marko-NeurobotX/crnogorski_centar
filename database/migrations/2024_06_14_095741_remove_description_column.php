@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('pripremas', function($table) {
-            $table->dropIfExists('description');
+            $table->dropColumn('description');
         });
     }
 
