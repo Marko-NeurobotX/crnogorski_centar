@@ -7,6 +7,7 @@ use App\Http\Controllers\LicenceController;
 use App\Http\Controllers\OglasController;
 use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\PripremaController;
 use App\Http\Controllers\ProgramController;
 use App\Models\Category;
 use App\Models\Clients;
@@ -32,4 +33,6 @@ Route::get('/licence', [LicenceController::class,'index']);
 Route::get('/gallery', [GalleryController::class,'index']);  
 
 Route::get('/clients', [ClientsController::class,'index']);
+
+Route::get('/priprema', [PripremaController::class,'index']);
 
