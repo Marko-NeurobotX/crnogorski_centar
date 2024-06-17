@@ -20,7 +20,7 @@ Route::get('/user', function (Request $request) {
 
 Route::get('/posts', [PostController::class, 'index']);
 
-Route::get('/posts/{slug}', ['PostController@index']);
+Route::get('/posts/{slug}', [PostController::class, 'show']);
 
 Route::get('/categories', [CategoryController::class, 'index']);
 
@@ -30,7 +30,7 @@ Route::get('/oglas', [OglasController::class,'index']);
 
 Route::get('/programi', [ProgramController::class,'index']);
 
-Route::get('/programi/{slug}', ['ProgramController@index',]);
+Route::get('/programi/{slug}', [ProgramController::class,'show']);
 
 Route::get('/licence', [LicenceController::class,'index']);
 
