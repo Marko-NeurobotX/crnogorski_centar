@@ -10,7 +10,7 @@ class ProgramController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index($slug, $id)
+    public function index()
     {
 
         return Program::all();
