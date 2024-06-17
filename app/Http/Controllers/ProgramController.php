@@ -10,8 +10,9 @@ class ProgramController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index($slug, $id)
     {
+
         return Program::all();
     }
 
@@ -34,9 +35,9 @@ class ProgramController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Program $program)
+    public function show(Program $program, string $slug )
     {
-        //
+        return Program::where("slug", $slug)->first();
     }
 
     /**

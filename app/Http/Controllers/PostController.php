@@ -34,9 +34,9 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Post $post)
+    public function show(Post $post, string $slug)
     {
-        //
+        return Post::where("slug", $slug)->first();
     }
 
     /**
